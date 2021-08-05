@@ -1,3 +1,4 @@
+## the live page is saved here https://mrdiamond007.github.io/Matrix-estore/
 ## Getting Started
 * Fork this repo to your remote repository.
 * Clone your remote repo to your local machine.
