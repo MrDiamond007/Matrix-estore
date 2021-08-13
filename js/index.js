@@ -21,3 +21,21 @@ SmallImg[3].onclick = function() {
 
     ProductImg.src = SmallImg[3].src;
 }
+
+// Javascript for toggle form (Account page)
+
+var LoginForm = document.getElementById("LoginForm");
+var RegisterForm = document.getElementById("RegisterForm");
+var Indicator = document.getElementById("Indicator");
+
+function register() {
+
+    RegisterForm.style.transform = "translateX(0px)";
+    LoginForm.style.transform = "translateX(0px)";
+}
+
+function login() {
+
+    RegisterForm.style.transform = "translateX(300px)";
+    LoginForm.style.transform = "translateX(300px)";
+}
