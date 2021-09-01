@@ -21,7 +21,7 @@
                 <img src="../img/logo.png" width="125px" alt="logo">
             </div>
             <nav>
-                <ul id="MenuItems">
+                <ul id="myLinks">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../pages/product.html">Products</a></li>
                     <li><a href="../pages/about.html">About</a></li>
@@ -30,7 +30,9 @@
                 </ul>
             </nav>
             <img src="../img/cart.png" width="30px" height="30px" alt="">
-            <img src="../img/menu.png" class="menu-icon" onclick="menutoggle()">
+            <a href="javascript:void(0);" class="menu-icon " onclick="myFunction()">
+                <img src="../img/menu.png " width="30px">
+            </a>
         </div>
     </div>
 
@@ -147,6 +149,16 @@
             LoginForm.style.transform = "translateX(300px)";
             Indicator.style.transform = "translateX(0px)";
 
+        }
+    </script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
         }
     </script>
 
