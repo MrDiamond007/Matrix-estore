@@ -20,16 +20,18 @@
                 <img src="../img/logo.png" width="125px" alt="logo">
             </div>
             <nav>
-                <ul id="MenuItems">
+                <ul id="myLinks">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../pages/product.html">Products</a></li>
                     <li><a href="../pages/about.html">About</a></li>
-                    <li><a href="">Contacts</a></li>
+                    <li><a href="../pages/contact.html">Contacts</a></li>
                     <li><a href="../pages/account.html">Account</a></li>
                 </ul>
             </nav>
             <img src="../img/cart.png" width="30px" height="30px" alt="">
-            <img src="../img/menu.png" class="menu-icon" onclick="menutoggle()">
+            <a href="javascript:void(0);" class="menu-icon " onclick="myFunction()">
+                <img src="../img/menu.png " width="30px">
+            </a>
         </div>
     </div>
 
@@ -317,15 +319,12 @@
 
     <!-- js for toggle menu -->
     <script>
-        let MenuItems = document.getElementById("MenuItems");
-
-        MenuItems.style.maxHeight = "0px";
-
-        function menutoggle() {
-            if (MenuItems.style.maxHeight == "0px") {
-                MenuItems.style.maxHeight = "200px";
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
             } else {
-                MenuItems.style.maxHeight == "0px";
+                x.style.display = "block";
             }
         }
     </script>

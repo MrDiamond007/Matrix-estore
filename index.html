@@ -23,16 +23,18 @@
                     <a href="index.html"><img src="img/logo.png" width="125px" alt="logo"></a>
                 </div>
                 <nav>
-                    <ul id="MenuItems">
+                    <ul id="myLinks">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="pages/product.html">Products</a></li>
                         <li><a href="pages/about.html">About</a></li>
-                        <li><a href="">Contacts</a></li>
+                        <li><a href="pages/contact.html">Contacts</a></li>
                         <li><a href="pages/account.html">Account</a></li>
                     </ul>
                 </nav>
                 <a href="pages/cart.html"><img src="img/cart.png " width="30px " height="30px " alt="Cart "></a>
-                <a href="javascript:void(0);"><img src="img/menu.png " class="menu-icon " onclick="menutoggle() "></a>
+                <a href="javascript:void(0);" class="menu-icon " onclick="myFunction()">
+                    <img src="img/menu.png " width="30px">
+                </a>
             </div>
             <div class="row ">
                 <div class="col-2 ">
@@ -289,7 +291,7 @@
                             <i class="fa fa-star "></i>
                             <i class="fa fa-star-o "></i>
                         </div>
-                        <img src="/img/user-3.png " alt=" ">
+                        <img src="img/user-3.png " alt=" ">
                         <h3>sean parker</h3>
                     </div>
                 </div>
@@ -371,7 +373,15 @@
 
         <!-- js for toggle menu -->
         <script>
-            let MenuItems = document.getElementById("MenuItems ");
+            // 
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
         </script>
 </body>
 

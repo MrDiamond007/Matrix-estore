@@ -108,6 +108,7 @@
     #img {
         width: 130%;
         margin-bottom: 50px;
+        display: block;
     }
     
     col-3 img {
@@ -397,6 +398,9 @@
             font-size: 26px;
             line-height: 32 px;
         }
+        .navbar #myLinks {
+            display: none;
+        }
     }
     /* Single Product Details- Page */
     
@@ -450,4 +454,43 @@
     .small-img-col {
         flex-basis: 24%;
         cursor: pointer;
+    }
+    /* Social media icons */
+    
+    .icons {
+        font-size: 35px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    i {
+        margin: 5px;
+    }
+    
+    .fa-instagram {
+        background: linear-gradient(to right top, yellow, red, blue);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    
+    .fa-facebook {
+        background: linear-gradient(to right top, blue, aqua);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    
+    .fa-whatsapp {
+        background: linear-gradient(to right top, green, lime);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    
+    .fa-twitter {
+        background: linear-gradient(to right top, aqua, blue);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    
+    fa {
+        transition: all 0.6s ease;
     }

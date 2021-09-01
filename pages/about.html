@@ -23,16 +23,18 @@
                     <a href="index.html"><img src="../img/logo.png" width="125px" alt="logo"></a>
                 </div>
                 <nav>
-                    <ul id="MenuItems">
+                    <ul id="myLinks">
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="../pages/product.html">Products</a></li>
                         <li><a href="">About</a></li>
-                        <li><a href="">Contacts</a></li>
+                        <li><a href="../pages/contact.html">Contacts</a></li>
                         <li><a href="../pages/account.html">Account</a></li>
                     </ul>
                 </nav>
                 <a href="../pages/cart.html"><img src="../img/cart.png " width="30px " height="30px " alt="Cart "></a>
-                <a href="javascript:void(0);"><img src="../img/menu.png " class="menu-icon " onclick="menutoggle() "></a>
+                <a href="javascript:void(0);" class="menu-icon " onclick="myFunction()">
+                    <img src="../img/menu.png " width="30px">
+                </a>
             </div>
             <div class="row ">
                 <div class="col-2 ">
@@ -175,54 +177,6 @@
         </div>
     </div>
 
-    <!-------Testimonial-->
-    <div class="testimonial ">
-        <div class="small-container ">
-            <div class="row ">
-                <div class="col-3 ">
-                    <i class="fa fa-quote-left "></i>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique quaerat, facilis autem quas, explicabo soluta beatae saepe unde dolores sed nisi corrupti odit et rem? Optio aliquid aspernatur quasi voluptatum. Nam pariatur quod
-                        est, eligendi recusandae ut quam reprehenderit mollitia quis, laborum in tempora. Ratione, officia quisquam ipsa seq!</p>
-                    <div class="rating ">
-                        <i class="fa fa-star "></i>
-                        <i class="fa fa-star "></i>
-                        <i class="fa fa-star "></i>
-                        <i class="fa fa-star-o "></i>
-                    </div>
-                    <img src="../img/user-1.png " alt=" ">
-                    <h3>sarah parker</h3>
-                </div>
-                <div class="col-3 ">
-                    <i class="fa fa-quote-left "></i>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique quaerat, facilis autem quas, explicabo soluta beatae saepe unde dolores sed nisi corrupti odit et rem? Optio aliquid aspernatur quasi voluptatum. Nam pariatur quod
-                        est, eligendi recusandae ut quam reprehenderit mollitia quis, laborum in tempora. Ratione, officia quisquam ipsa seq!</p>
-                    <div class="rating ">
-                        <i class="fa fa-star "></i>
-                        <i class="fa fa-star "></i>
-                        <i class="fa fa-star "></i>
-                        <i class="fa fa-star-o "></i>
-                    </div>
-                    <img src="../img/user-2.png " alt=" ">
-                    <h3>Mike Smith</h3>
-                </div>
-                <div class="col-3 ">
-                    <i class="fa fa-quote-left "></i>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique quaerat, facilis autem quas, explicabo soluta beatae saepe unde dolores sed nisi corrupti odit et rem? Optio aliquid aspernatur quasi voluptatum. Nam pariatur quod
-                        est, eligendi recusandae ut quam reprehenderit mollitia quis, laborum in tempora. Ratione, officia quisquam ipsa seq!</p>
-                    <div class="rating ">
-                        <i class="fa fa-star "></i>
-                        <i class="fa fa-star "></i>
-                        <i class="fa fa-star "></i>
-                        <i class="fa fa-star-o "></i>
-                    </div>
-                    <img src="../img/user-3.png " alt=" ">
-                    <h3>sean parker</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
     <!--Brands-->
 
     <div class="brands ">
@@ -297,7 +251,14 @@
 
     <!-- js for toggle menu -->
     <script>
-        let MenuItems = document.getElementById("MenuItems ");
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
     </script>
 </body>
 
